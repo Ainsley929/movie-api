@@ -2,13 +2,7 @@
 
 module.exports = {
   up: async (queryInterface) => {
-    /*
-      Add altering commands here.
-      Return a promise to correctly handle asynchronicity.
 
-      Example:
-      return queryInterface.createTable('users', { id: Sequelize.INTEGER });
-    */
     await queryInterface.bulkInsert('movieDirectors', [
       { movieId: 1, directorId: 1 },
       { movieId: 2, directorId: 2 },
